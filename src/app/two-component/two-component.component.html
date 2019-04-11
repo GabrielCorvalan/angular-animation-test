@@ -1,0 +1,12 @@
+<button (click)="addItem()">ADD ITEM</button>
+<button (click)="removeItem()">REMOVE ITEM</button>
+
+
+<table>
+  <thead>
+    <th>Producto</th>
+  </thead>
+  <tbody *ngFor="let item of items" [@EnterLeave]="'flyIn'">
+    <th>{{item}}</th>
+  </tbody>
+</table>
